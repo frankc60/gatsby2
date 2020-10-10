@@ -24,10 +24,20 @@ const Hero = () => {
     },
   } = useStaticQuery(heroImg)
   return (
-    <h2>
-      hero componentedd
-      <Image fluid={fluid} />
-    </h2>
+    <header className="hero">
+      <div className="section-center hero-center">
+        <article className="hero-info">
+          <div className="underline"></div>
+          <h1>I'm Frank</h1>
+          <h4>freelance web developer</h4>
+          <Link to="/contact/" className="btn">
+            contact me
+          </Link>
+          <SocialLinks />
+        </article>
+        <Image fluid={fluid} className="hero-img" />
+      </div>
+    </header>
   )
 }
 

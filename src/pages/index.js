@@ -12,6 +12,7 @@ export default () => {
       <h2>index page</h2>
       <Hero />
       <Services />
+      <Jobs />
     </Layout>
   )
 }
